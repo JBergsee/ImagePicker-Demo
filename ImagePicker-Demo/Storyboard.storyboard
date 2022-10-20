@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Demo View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="DemoViewController" customModule="ImagePicker_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRl-xk-6lb">
+                                <rect key="frame" x="153.5" y="432.5" width="107" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Pick Image..."/>
+                                <connections>
+                                    <action selector="showImagePicker:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="N8O-P4-L0x"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.69999999999999996" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="T3N-kO-NHv">
+                                <rect key="frame" x="18" y="613.5" width="378" height="31"/>
+                            </slider>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CRl-xk-6lb" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="KQh-8F-mwR"/>
+                            <constraint firstItem="T3N-kO-NHv" firstAttribute="top" secondItem="CRl-xk-6lb" secondAttribute="bottom" constant="150" id="Tbk-U4-SSa"/>
+                            <constraint firstItem="CRl-xk-6lb" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="WJJ-N7-Bb8"/>
+                            <constraint firstItem="T3N-kO-NHv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="YY0-mn-Ofm"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="T3N-kO-NHv" secondAttribute="trailing" constant="20" id="lM8-Ty-jJj"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28" y="69"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
